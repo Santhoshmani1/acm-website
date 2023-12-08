@@ -1,4 +1,6 @@
 import logo from "../assets/logo.png";
+import Link from "react-router-dom";
+
 const Header = () => {
   function toggleNavbar() {
     const navbar = document.getElementById("navbar-solid-bg");
@@ -11,8 +13,8 @@ const Header = () => {
         style={{ backgroundColor: "#ffffff" }}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href="/"
+          <Link
+            to={"/"}
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -24,7 +26,7 @@ const Header = () => {
             <h1 className="self-center px-2 text-3xl font-semibold">
               ACM ANITS
             </h1>
-          </a>
+          </Link>
           <button
             onClick={toggleNavbar}
             data-collapse-toggle="navbar-solid-bg"
@@ -38,37 +40,37 @@ const Header = () => {
           <div className=" w-full md:block md:w-auto hidden" id="navbar-solid-bg">
             <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
               <li className="text-center">
-                <a
-                  href="/"
+                <Link
+                  to={"/"}
                   className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="text-center">
-                <a
-                  href="/events"
+                <Link
+                  to={"/events"}
                   className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Events
-                </a>
+                </Link>
               </li>
               <li className="text-center">
-                <a
-                  href="/projects"
+                <Link
+                  to={"/projects"}
                   className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="text-center">
-                <a
-                  href="/team"
+                <Link
+                  to={"/team"}
                   className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Team
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
