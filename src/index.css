@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animated-component {
+    opacity: 0.2;
+    transform: translateY(50px);
+    transition: transform 300ms ease;
+    transition-delay: 100ms;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .animated-component.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

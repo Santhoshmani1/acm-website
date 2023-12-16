@@ -7,10 +7,9 @@ const Header = () => {
     navbar.classList.toggle("hidden");
   }
   return (
-    <>
+    <div className="fixed w-screen z-10">
       <nav
-        className="py-2 shadow border"
-        style={{ backgroundColor: "#ffffff" }}
+        className="py-1 shadow bg-white border-2"
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
@@ -31,14 +30,14 @@ const Header = () => {
             onClick={toggleNavbar}
             data-collapse-toggle="navbar-solid-bg"
             type="button" 
-            className="inline-flex items-center p-2 w-10 h-10 sm:hidden justify-center text-sm hover:border  hover:border-gray-400 rounded-lg hover:bg-gray-200 md:hidden"
+            className="inline-flex items-center p-2 w-10 h-10  justify-center text-sm hover:border  hover:border-gray-400 rounded-lg hover:bg-gray-200 md:hidden"
             aria-controls="navbar-solid-bg"
             aria-expanded="false" 
           >
             <span className="material-icons">menu</span>
           </button>
           <div className=" w-full md:block md:w-auto hidden" id="navbar-solid-bg">
-            <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+            <ul className="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li className="text-center">
                 <Link
                   to={"/"}
@@ -76,7 +75,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
