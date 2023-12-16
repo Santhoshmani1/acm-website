@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <div className="home-hero max-w-4xl mx-auto text-center p-4 ">
+      <div className="home-hero max-w-4xl mx-auto text-center p-4 pt-20">
         <h2
           className="text-3xl text-center md:text-5xl font-semibold"
           style={{ fontFamily: "Open Sans,Montserrat,serif" }}
@@ -83,7 +83,7 @@ const Home = () => {
         <h2 className="text-3xl md:text-4xl text-center font-semibold p-3">
           Team
         </h2>
-        
+
         <div className="team-info text-xl text-center p-2 mx-auto">
           We are a diverse and inclusive community that warmly welcomes all
           student developers passionate about Computer Science.

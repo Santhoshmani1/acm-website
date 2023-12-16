@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <>
       <Header />
-      <div className="team mb-10 pt-20">
+      <div className="team mb-10 pt-20 mx-auto">
         <h2
           className="text-4xl text-center p-2 mb-5  font-bold leading-loose"
           style={{
@@ -18,7 +18,7 @@ const Team = () => {
             letterSpacing: "0.4px",
           }}
         >
-         Meet the Team
+          Meet the Team
         </h2>
 
         <div className="members-container lg:grid lg:grid-cols-2 lg:gap-2">

@@ -19,7 +19,7 @@ const Events = () => {
   return (
     <>
       <Header />
-      <div className="events-page">
+      <div className="events-page pt-20">
         <h2 className="text-4xl p-2 m-2 font-semibold font-sans text-center">
           Upcoming Events
         </h2>
@@ -57,11 +57,14 @@ const Events = () => {
                 </div>
               </div>
               <div className="event-card-body">
-                <p className="text-slate-600 text-center" style={{fontFamily:"Roboto,Ariel,sans"}}>{event.description}</p>
+                <p
+                  className="text-slate-600 text-center"
+                  style={{ fontFamily: "Roboto,Ariel,sans" }}
+                >
+                  {event.description}
+                </p>
               </div>
-              <div className="font-semibold p-2">
-                Venue: {event.venue}
-              </div>
+              <div className="font-semibold p-2">Venue: {event.venue}</div>
               <div className="event-card-footer mx-auto text-center">
                 <a
                   href={event.registrationLink}
