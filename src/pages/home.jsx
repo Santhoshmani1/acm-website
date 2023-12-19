@@ -1,7 +1,8 @@
 import { FaGlobe } from "react-icons/fa6";
-import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 import Header from "../components/header";
 import events from "../assets/events.png";
+import Footer from "../components/footer";
 
 const Home = () => {
   return (
@@ -12,9 +13,11 @@ const Home = () => {
           className="text-3xl text-center md:text-5xl font-semibold"
           style={{ fontFamily: "Open Sans,Montserrat,serif" }}
         >
-          Welcome to
-          <span className="text-blue-600"> ACM ANITS </span>
-          Student Community
+          <div className="pt-5">
+            Welcome to
+            <span className="text-blue-600"> ACM ANITS </span>
+            Student Community
+          </div>
         </h2>
       </div>
 
@@ -51,12 +54,12 @@ const Home = () => {
           </div>
         </div>
         <div className="events-action flex justify-center items-center p-3">
-          <a href="/events">
-            <button className="px-8 py-3 bg-blue-800 hover:bg-blue-600 text-white rounded-xl shadow-sm shadow-slate-400 text-center text-lg">
+          <Link to="/events">
+            <button className="px-8 py-3 bg-blue-800 hover:bg-blue-600 text-white rounded-xl shadow-sm shadow-slate-400 text-center text-sm">
               Browse Upcoming events{" "}
               <FaGlobe style={{ display: "inline-block" }} />
             </button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -91,11 +94,11 @@ const Home = () => {
             Whether you&apos;re a beginner or an experienced, We welcome you.
           </p>
           <div className="events-action flex justify-center items-center p-3">
-            <a href="/team">
-              <button className="px-8 py-3 bg-blue-800 hover:bg-blue-600 text-white rounded-xl shadow-sm shadow-slate-400">
+            <Link to="/team">
+              <button className="px-8 py-3 bg-blue-800 hover:bg-blue-600 text-white rounded-xl shadow-sm shadow-slate-400 text-sm">
                 Meet the team
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

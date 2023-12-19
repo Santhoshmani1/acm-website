@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <>
       <Header />
-      <div className="team mb-10 pt-20 mx-auto">
+      <div className="team mb-10 pt-20 mx-auto bg-gray-200">
         <h2
           className="text-4xl text-center p-2 mb-5  font-bold leading-loose"
           style={{
@@ -25,7 +25,7 @@ const Team = () => {
           {members.map((member, index) => (
             <div key={index} className="m-5">
               <Animate>
-                <div className="member-card w-screen flex flex-col justify-evenly items-center max-w-md mx-auto p-4 m-2 border shadow-md rounded-xl shadow-slate-500">
+                <div className="member-card w-screen flex flex-col justify-evenly items-center max-w-md mx-auto p-4 m-2 border shadow-md rounded-xl shadow-slate-500 bg-white">
                   <div className="member-card-header">
                     {member.profilePicture ? (
                       <img

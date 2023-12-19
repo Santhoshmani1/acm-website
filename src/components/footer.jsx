@@ -1,13 +1,14 @@
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
       <footer>
         <div className="footer-container flex justify-evenly items-center z-10 bg-slate-900 p-2">
           <h2 className="text-2xl p-2 font-sans font-normal ">
-            <a href="/" className="text-white">
+            <Link to="/" className="text-white">
               ACM ANITS
-            </a>
+            </Link>
           </h2>
           <div className="path-links-container py-4 hidden lg:block">
             <ul 
@@ -15,47 +16,47 @@ const Footer = () => {
              "
             >
               <li className="py-2 text-blue-500 text-lg">
-                <a href="/Home" className="hover:underline">
+                <Link to="/" className="hover:underline">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="py-2 text-blue-500 text-lg">
-                <a href="/Events" className="hover:underline">
+                <Link to="/events" className="hover:underline">
                   Events
-                </a>
+                </Link>
               </li>
               <li className="py-2 text-blue-500 text-lg">
-                <a href="/Projects" className="hover:underline">
+                <Link to="/Projects" className="hover:underline">
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="py-2 text-blue-500 text-lg">
-                <a href="/Team" className="hover:underline">
+                <Link to="/Team" className="hover:underline">
                   Team
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="socials-container flex  md:justify-evenly justify-center items-center">
-            <a href="#">
+            <Link to="https://www.github.com/Santhoshmani1/acm-website">
               <FaGithub
                 className="text-3xl p-1 rounded-3xl mx-6 text-center"
                 style={{ backgroundColor: "black",color:"white" }}
               />
-            </a>{" "}
-            <a href="#">
+            </Link>{" "}
+            {/* <a href="/">
               <FaLinkedinIn
                 className="text-3xl p-1 rounded-lg mx-6"
                 style={{ backgroundColor: "#069",color:"white" }}
               />
             </a>
-            <a href="#">
+            <a href="/">
               <FaTwitter
                 className="text-3xl p-1 rounded-lg mx-6"
                 style={{ backgroundColor: "#069aed",color:"white" }}
               />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="copyright-container text-center py-3 font-sans bg-slate-900 text-gray-300">

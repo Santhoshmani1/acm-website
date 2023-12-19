@@ -22,7 +22,7 @@ const Header = () => {
               alt="ACM ANITS Logo"
               style={{ width: "40px" }}
             />
-            <h1 className="self-center px-2 text-3xl font-semibold">
+            <h1 className="self-center px-2 text-2xl lg:text-3xl font-semibold">
               ACM ANITS
             </h1>
           </Link>
