@@ -1,13 +1,18 @@
+import santhoshImg from "../assets/profilePictures/santhosh.jpg";
+import aryaImg from "../assets/profilePictures/arya.jpg"
+import tarunImg from "../assets/profilePictures/tarun.jpg"
+import chaitanyaImg from '../assets/profilePictures/chaitanya.jpg'
+
 
 
 const members = [
   {
     name: "Tarun Varaha sai",
-    profilePicture: "",
+    profilePicture: tarunImg,
     role: "Chair Person",
     department: "Computer science and Engineering",
     github: "",
-    linkedin: "",
+    linkedin: "tarunsai08",
     twitter: "",
   },
   {
@@ -21,11 +26,11 @@ const members = [
   },
   {
     name: "Chaitanya D",
-    profilePicture: "",
+    profilePicture: chaitanyaImg,
     role: "Secretary",
     department: "Computer science and Engineering",
     github: "",
-    linkedin: "",
+    linkedin: "chaitanya-dhavaleswarapu-31047b259",
     twitter: "",
   },
   {
@@ -34,7 +39,7 @@ const members = [
     role: "Membership Chair",
     department: "Computer science and Engineering",
     github: "",
-    linkedin: "",
+    linkedin: "asreeth-putheti-a60680251",
     twitter: "",
   },
   {
@@ -52,7 +57,7 @@ const members = [
     role: "Content writer",
     department: "Information Technology",
     github: "",
-    linkedin: "",
+    linkedin: "chada-sai-anjana-manaswitha-906805259",
     twitter: "",
   },
   {
@@ -61,22 +66,22 @@ const members = [
     role: "Lead Android developer",
     department: "Computer science and Engineering",
     github: "",
-    linkedin: "",
+    linkedin: "vanka-siddhartha-35b767229",
     twitter: "",
   },
   {
     name: "Arya B",
-    profilePicture: "",
+    profilePicture: aryaImg,
     role: "Treasurer",
     department: "Computer science and Engineering",
     github: "",
-    linkedin: "",
+    linkedin: "arya-bodda-03700a217",
     twitter: "",
   },
   {
     name: "Santhosh Mani",
     profilePicture:
-      "https://avatars.githubusercontent.com/u/119673958?s=96&v=4",
+      santhoshImg,
     role: "Lead Web developer",
     department: "Electronics & Communications",
     github: "Santhoshmani1",

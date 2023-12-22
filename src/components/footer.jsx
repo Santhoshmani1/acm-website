@@ -1,17 +1,24 @@
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter, FaX, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import acmlogo from "../assets/logo.png";
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footer-container flex justify-evenly items-center z-10 bg-slate-900 p-2">
-          <h2 className="text-2xl p-2 font-sans font-normal ">
-            <Link to="/" className="text-white">
-              ACM ANITS
-            </Link>
-          </h2>
+        <div className="footer-container flex justify-between items-center z-10 bg-slate-900 p-2">
+          <div className="wrapper flex items-center justify-center">
+            <div className="bg-white rounded-2xl p-2 mt-5">
+              <img src={acmlogo} alt="acm-logo" style={{ height: "50px" }} />
+            </div>
+            <h2 className="text-2xl p-2 font-sans font-normal mt-5">
+              <Link to="/" className="text-white ">
+                <div className="text-center">ANITS</div>
+                <div className="text-center">ACM</div>
+              </Link>
+            </h2>
+          </div>
           <div className="path-links-container py-4 hidden lg:block">
-            <ul 
+            <ul
               className="md:flex md:justify-evenly md:items-center
              "
             >
@@ -41,22 +48,28 @@ const Footer = () => {
           <div className="socials-container flex  md:justify-evenly justify-center items-center">
             <Link to="https://www.github.com/Santhoshmani1/acm-website">
               <FaGithub
-                className="text-3xl p-1 rounded-3xl mx-6 text-center"
-                style={{ backgroundColor: "black",color:"white" }}
+                className="text-3xl p-1 rounded-2xl mx-4 text-center"
+                style={{ backgroundColor: "black", color: "white" }}
               />
             </Link>{" "}
-            {/* <a href="/">
+            <Link to={""}>
+              <FaXTwitter
+                className="text-3xl p-1 rounded-2xl mx-4 text-center"
+                style={{ backgroundColor: "#111", color: "white" }}
+              />
+              </Link>
+            <Link to={""}>
               <FaLinkedinIn
-                className="text-3xl p-1 rounded-lg mx-6"
-                style={{ backgroundColor: "#069",color:"white" }}
+                className="text-3xl p-1 rounded-2xl mx-4 text-center"
+                style={{ backgroundColor: "#0A66C2", color: "white" }}
               />
-            </a>
-            <a href="/">
-              <FaTwitter
-                className="text-3xl p-1 rounded-lg mx-6"
-                style={{ backgroundColor: "#069aed",color:"white" }}
+            </Link>
+            <Link to={""}>
+              <FaInstagram
+                className="text-3xl p-1 rounded-2xl mx-4 text-center"
+                style={{ backgroundColor: "#E1306C", color: "white" }}
               />
-            </a> */}
+            </Link>
           </div>
         </div>
         <div className="copyright-container text-center py-3 font-sans bg-slate-900 text-gray-300">

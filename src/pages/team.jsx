@@ -31,12 +31,12 @@ const Team = () => {
                       <img
                         src={member.profilePicture}
                         alt={member.name}
-                        className="rounded-3xl p-2 w-30 h-auto"
+                        className="rounded-3xl p-2 w-1/2 mx-auto h-auto"
                       />
                     ) : (
                       <>
-                        <div className="h-14 w-20 bg-blue-500 text-white text-center text-4xl my-auto rounded-xl">
-                          {member.name[0]}
+                        <div className="h-40 w-10 px-20 bg-blue-500 text-white text-center text-4xl mt-10 rounded-xl flex justify-center items-center">
+                          <div className="text-5xl">{member.name[0]}</div>
                         </div>
                       </>
                     )}
