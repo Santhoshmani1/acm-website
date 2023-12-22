@@ -9,7 +9,7 @@ const Team = () => {
   return (
     <>
       <Header />
-      <div className="team mb-10 pt-20 mx-auto bg-gray-200">
+      <div className="team pb-10 pt-20 mx-auto bg-gray-200">
         <h2
           className="text-4xl text-center p-2 mb-5  font-bold leading-loose"
           style={{
@@ -23,9 +23,9 @@ const Team = () => {
 
         <div className="members-container lg:grid lg:grid-cols-2 lg:gap-2">
           {members.map((member, index) => (
-            <div key={index} className="m-5">
+            <div key={index} className="my-5 mx-5">
               <Animate>
-                <div className="member-card w-screen flex flex-col justify-evenly items-center max-w-md mx-auto p-4 m-2 border shadow-md rounded-xl shadow-slate-500 bg-white">
+                <div className="member-card max-w-4/5 flex flex-col justify-evenly items-center max-w-md mx-auto p-4 m-2 border shadow-sm rounded-xl  bg-white  shadow-blue-500">
                   <div className="member-card-header">
                     {member.profilePicture ? (
                       <img
@@ -50,29 +50,37 @@ const Team = () => {
                     </h4>
                     <h4 className="member-year">{member.year}</h4>
                     <h4
-                      className="member-department"
+                      className="member-department text-center"
                       style={{ color: "#5f6368" }}
                     >
                       Department of {member.department}
                     </h4>
                     <div className="member-socials">
                       <div className="flex justify-evenly p-2 items-center">
-                        <Link to={"https://github.com/" + member.github}>
-                          <FaGithub
-                            className=""
-                            style={{ fontSize: "1.7rem" }}
-                          />
-                        </Link>
-                        <Link to={"https://linkedin.com/in/" + member.linkedin}>
-                          <FaLinkedin
-                            style={{ fontSize: "1.7rem", color: "#069" }}
-                          />
-                        </Link>
-                        <Link to={"https://twitter.com/" + member.twitter}>
-                          <FaTwitter
-                            style={{ fontSize: "1.7rem", color: "#069aed" }}
-                          />
-                        </Link>
+                        {member.github && (
+                          <Link to={"https://github.com/" + member.github}>
+                            <FaGithub
+                              className=""
+                              style={{ fontSize: "1.7rem" }}
+                            />
+                          </Link>
+                        )}
+                        {member.linkedin && (
+                          <Link
+                            to={"https://linkedin.com/in/" + member.linkedin}
+                          >
+                            <FaLinkedin
+                              style={{ fontSize: "1.7rem", color: "#069" }}
+                            />
+                          </Link>
+                        )}
+                        {member.twitter && (
+                          <Link to={"https://twitter.com/" + member.twitter}>
+                            <FaTwitter
+                              style={{ fontSize: "1.7rem", color: "#069aed" }}
+                            />
+                          </Link>
+                        )}
                       </div>
                       <div></div>
                       <div></div>
