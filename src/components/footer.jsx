@@ -12,25 +12,25 @@ const Footer = () => {
           </h2>
           <div className="path-links-container py-4 hidden lg:block">
             <ul 
-              className="md:flex md:flex-col md:justify-evenly md:items-center
+              className="md:flex md:justify-evenly md:items-center
              "
             >
-              <li className="py-2 text-blue-500 text-lg">
+              <li className="p-2 text-blue-500 text-lg">
                 <Link to="/" className="hover:underline">
                   Home
                 </Link>
               </li>
-              <li className="py-2 text-blue-500 text-lg">
+              <li className="p-2 text-blue-500 text-lg">
                 <Link to="/events" className="hover:underline">
                   Events
                 </Link>
               </li>
-              <li className="py-2 text-blue-500 text-lg">
+              <li className="p-2 text-blue-500 text-lg">
                 <Link to="/Projects" className="hover:underline">
                   Projects
                 </Link>
               </li>
-              <li className="py-2 text-blue-500 text-lg">
+              <li className="p-2 text-blue-500 text-lg">
                 <Link to="/Team" className="hover:underline">
                   Team
                 </Link>
