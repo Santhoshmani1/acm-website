@@ -600,6 +600,10 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .block{
   display: block;
 }
@@ -812,6 +816,10 @@ video {
   padding: 2.5rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -888,6 +896,14 @@ video {
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pb-40{
+  padding-bottom: 10rem;
 }
 
 .text-center{
