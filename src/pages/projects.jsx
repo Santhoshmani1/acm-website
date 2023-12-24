@@ -1,6 +1,6 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
-import comingSoon from "../assets/comingSoon.jpg";
+import comingSoon from "../assets/comingsoon.jpg";
 const Projects = () => {
   return (
     <>
