@@ -1,9 +1,11 @@
 import santhoshImg from "../assets/profilePictures/santhosh.jpg";
-import aryaImg from "../assets/profilePictures/arya.jpg"
-import tarunImg from "../assets/profilePictures/tarun.jpg"
-import chaitanyaImg from '../assets/profilePictures/chaitanya.jpg'
-
-
+import aryaImg from "../assets/profilePictures/arya.png"
+import tarunImg from "../assets/profilePictures/tarun.png"
+import chaitanyaImg from '../assets/profilePictures/chaitanya.png'
+import varshithImg from '../assets/profilePictures/varshith.png'
+import asreethImg from '../assets/profilePictures/asreeth.png'
+import vasutaImg from '../assets/profilePictures/vasuta.png'
+import anjanaImg from '../assets/profilePictures/anjana.png'
 
 const members = [
   {
@@ -17,7 +19,7 @@ const members = [
   },
   {
     name: "Varshith G",
-    profilePicture: "",
+    profilePicture: varshithImg,
     role: "Vice Chair",
     department: "Computer science and Engineering",
     github: "",
@@ -35,7 +37,7 @@ const members = [
   },
   {
     name: "Asreeth Putheti",
-    profilePicture: "",
+    profilePicture: asreethImg,
     role: "Membership Chair",
     department: "Computer science and Engineering",
     github: "",
@@ -44,7 +46,7 @@ const members = [
   },
   {
     name: "Vasuta Kuchhadia",
-    profilePicture: "",
+    profilePicture: vasutaImg,
     role: "Alumni manager & Marketing Head",
     department: "Information Technology",
     github: "",
@@ -53,7 +55,7 @@ const members = [
   },
   {
     name: "Anjana Manaswitha",
-    profilePicture: "",
+    profilePicture: anjanaImg,
     role: "Content writer",
     department: "Information Technology",
     github: "",

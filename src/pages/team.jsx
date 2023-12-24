@@ -3,7 +3,8 @@ import Footer from "../components/footer";
 import Animate from "../components/AnimateComponent";
 import members from "../data/members";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Team = () => {
   return (
@@ -31,7 +32,7 @@ const Team = () => {
                       <img
                         src={member.profilePicture}
                         alt={member.name}
-                        className="rounded-3xl p-2 w-1/2 mx-auto h-auto"
+                        className="rounded-2xl p-2 w-1/2 mx-auto h-auto"
                       />
                     ) : (
                       <>
@@ -57,30 +58,28 @@ const Team = () => {
                     </h4>
                     <div className="member-socials">
                       <div className="flex justify-evenly p-2 items-center">
-                        {member.github && (
-                          <Link to={"https://github.com/" + member.github}>
+                        
+                          <Link to={member.github}>
                             <FaGithub
                               className=""
                               style={{ fontSize: "1.7rem" }}
                             />
                           </Link>
-                        )}
-                        {member.linkedin && (
+                      
                           <Link
-                            to={"https://linkedin.com/in/" + member.linkedin}
+                            to={ member.linkedin}
                           >
                             <FaLinkedin
                               style={{ fontSize: "1.7rem", color: "#069" }}
                             />
                           </Link>
-                        )}
-                        {member.twitter && (
-                          <Link to={"https://twitter.com/" + member.twitter}>
-                            <FaTwitter
-                              style={{ fontSize: "1.7rem", color: "#069aed" }}
+                        
+                          <Link to={member.twitter}>
+                            <FaXTwitter className="rounded-xl p-1"
+                              style={{ fontSize: "1.7rem", color: "white",backgroundColor:"black" }}
                             />
                           </Link>
-                        )}
+                        
                       </div>
                       <div></div>
                       <div></div>
