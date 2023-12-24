@@ -596,6 +596,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -804,6 +808,10 @@ video {
   padding: 1rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -849,6 +857,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -867,6 +880,14 @@ video {
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pt-40{
+  padding-top: 10rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -1160,12 +1181,24 @@ video {
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:grid{
     display: grid;
   }
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:gap-2{

@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="socials-container grid grid-cols-2 gap-2">
+          <div className="socials-container grid grid-cols-2 gap-2 md:flex md:justify-center md:items-center">
             <Link to="https://www.github.com/Santhoshmani1/acm-website">
               <FaGithub
                 className="text-3xl p-1 rounded-2xl mx-4 text-center"

@@ -6,9 +6,9 @@ const Projects = () => {
     <>
       <Header />
       <div className="projects-container pt-20">
-        <h2 className="text-4xl text-center p-3 font-semibold">Projects</h2>
+        <h2 className="text-4xl text-center p-10 font-semibold">Projects</h2>
       </div>
-      <div className="upcoming-projects-container  mb:mb-0 pb-10 lg:max-h-1/2">
+      <div className="upcoming-projects-container  mb:mb-0 pb-10 lg:max-h-1/2 mb-20">
         <img src={comingSoon} alt="" id="coming-soon" className="h-3/4 w-5/6 sm:w-fit sm:h-fit "/>
         <div className="maintenance-message">
           <h3 className=" coming-soon-message font-bold text-2xl text-center">We are Under Maintenance</h3>
