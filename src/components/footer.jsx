@@ -1,12 +1,12 @@
-import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter, FaX, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import acmlogo from "../assets/logo.png";
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footer-container flex justify-between items-center z-10 bg-slate-900 p-2">
-          <div className="wrapper flex items-center justify-center">
+        <div className="footer-container flex justify-between items-center z-10 bg-slate-900 pl-12">
+          <div className="wrapper flex items-center justify-evenly">
             <div className="bg-white rounded-2xl p-2 mt-5">
               <img src={acmlogo} alt="acm-logo" style={{ height: "50px" }} />
             </div>
@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="socials-container flex  md:justify-evenly justify-center items-center">
+          <div className="socials-container grid grid-cols-2 gap-2">
             <Link to="https://www.github.com/Santhoshmani1/acm-website">
               <FaGithub
                 className="text-3xl p-1 rounded-2xl mx-4 text-center"

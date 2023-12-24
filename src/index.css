@@ -16,4 +16,9 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  #coming-soon {
+    height: 60vh;
+    margin: 0 auto;
+  }
   
