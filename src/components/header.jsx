@@ -11,7 +11,7 @@ const Header = () => {
       <nav
         className="py-1 shadow bg-white border-2"
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <Link
             to={"/"}
             className="flex items-center space-x-3 rtl:space-x-reverse"

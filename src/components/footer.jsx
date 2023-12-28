@@ -1,23 +1,23 @@
-import { FaGithub, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import acmlogo from "../assets/logo.png";
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footer-container flex justify-between items-center z-10 bg-slate-900 pl-12">
+        <div className="footer-container sm:grid sm:grid-cols-3 sm:items-center  z-10 bg-slate-900 pl-5 flex flex-col items-start">
           <div className="wrapper flex items-center justify-evenly">
             <div className="bg-white rounded-2xl p-2 mt-5">
-              <img src={acmlogo} alt="acm-logo" style={{ height: "50px" }} />
+              <img src={acmlogo} alt="acm-logo" style={{ height: "30px" }} />
             </div>
-            <h2 className="text-2xl p-2 font-sans font-normal mt-5">
+            <h2 className="md:text-2xl  text-xl px-5 font-sans font-semibold mt-5">
               <Link to="/" className="text-white ">
                 <div className="text-center">ANITS</div>
                 <div className="text-center">ACM</div>
               </Link>
             </h2>
           </div>
-          <div className="path-links-container py-4 hidden lg:block">
+          <div className="path-links-container py-4  sm:mx-auto sm:block">
             <ul
               className="md:flex md:justify-evenly md:items-center
              "
@@ -45,26 +45,24 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="socials-container grid grid-cols-2 gap-2 md:flex md:justify-center md:items-center">
+          <div className="socials-container flex justify-center items-center py-4">
             <Link to="https://www.github.com/Santhoshmani1/acm-website">
               <FaGithub
                 className="text-3xl p-1 rounded-2xl mx-4 text-center"
                 style={{ backgroundColor: "black", color: "white" }}
               />
             </Link>{" "}
-            <Link to={""}>
-              <FaXTwitter
+            <Link
+              to={"https://www.linkedin.com/company/acmanits"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin
                 className="text-3xl p-1 rounded-2xl mx-4 text-center"
-                style={{ backgroundColor: "#111", color: "white" }}
-              />
-              </Link>
-            <Link to={""}>
-              <FaLinkedinIn
-                className="text-3xl p-1 rounded-2xl mx-4 text-center"
-                style={{ backgroundColor: "#0A66C2", color: "white" }}
+                style={{ backgroundColor: "#069", color: "white" }}
               />
             </Link>
-            <Link to={""}>
+            <Link to={"https:/instagram.com/acm_anits/"}>
               <FaInstagram
                 className="text-3xl p-1 rounded-2xl mx-4 text-center"
                 style={{ backgroundColor: "#E1306C", color: "white" }}
@@ -72,8 +70,10 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="copyright-container text-center py-3 font-sans bg-slate-900 text-gray-300">
-          &copy; All rights reserved ACM ANITS 2023
+        <div className="copyright-container sm:text-center p-3 font-sans bg-slate-900 text-gray-300">
+          <div className="font-bold p-1">ACM ANITS 2023</div>
+          &copy; All rights reserved
+          <div></div>{" "}
         </div>
       </footer>
     </>
