@@ -27,7 +27,7 @@ const Member = ({ member }) => {
             )}
           </div>
           <div className="member-card-body">
-            <h3 className="member-name text-center text-2xl font-semibold p-1 text-white" style={{fontFamily:"Montserrat"}}>
+            <h3 className="member-name text-center text-2xl font-bold p-1" style={{fontFamily:"Montserrat"}}>
               {name}
             </h3>
             <h4 className="member-role text-lg text-center">{role}</h4>
