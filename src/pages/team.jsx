@@ -27,21 +27,21 @@ const Team = () => {
         </div>
 
         <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Associate Team</h3>
-        <div className="associates-container flex flex-col lg:flex-row justify-center items-center mx-auto">
+        <div className="associates-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
           {AssociateTeam.map((member,index) => (
             <Member member={member} key={index}/>
           ))}
           </div>
 
           <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Marketing Team</h3>
-        <div className="marketing-container flex flex-col lg:flex-row justify-center items-center mx-auto">
+        <div className="marketing-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
           {MarketingTeam.map((member,index) => (
             <Member member={member} key={index}/>
           ))}
           </div>
 
           <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Development Team</h3>
-        <div className="development-container flex flex-col lg:flex-row justify-center items-center mx-auto">
+        <div className="development-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
           {developmentTeam.map((member,index) => (
             <Member member={member} key={index}/>
           ))}
