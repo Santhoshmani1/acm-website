@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Open+Sans&family=Roboto&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (min-width: 768px) {
+  #hero-video {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+}
 
 .animated-component {
     opacity: 0.2;

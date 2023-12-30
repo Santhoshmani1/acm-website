@@ -1,6 +1,6 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import {ExecutiveTeam,AssociateTeam,MarketingTeam,developmentTeam} from "../data/members";
+import {facultyCoOrdinators,ExecutiveTeam,AssociateTeam,MarketingTeam,developmentTeam} from "../data/members";
 import Member from "../components/member";
 
 const Team = () => {
@@ -19,8 +19,16 @@ const Team = () => {
           Meet the Team
         </h2>
 
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Faculty Co-Ordinators</h3>
+
+        <div className="faculty-container flex flex-col lg:flex-row justify-evenly items-center mx-auto px-10">
+          {facultyCoOrdinators.map((member,index) => (
+            <Member member={member} key={index} />
+          ))}
+        </div>
+
           <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Executive Team</h3>
-        <div className="executives-container lg:grid lg:grid-cols-3 lg:gap-2 flex flex-col justify-center items-center">
+        <div className="executives-container lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col justify-center items-center">
           {ExecutiveTeam.map((member,index) => (
             <Member member={member} key={index}/>
           ))}

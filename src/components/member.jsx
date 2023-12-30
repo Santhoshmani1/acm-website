@@ -5,8 +5,16 @@ import { FaXTwitter } from "react-icons/fa6";
 import Animate from "./AnimateComponent";
 
 const Member = ({ member }) => {
-  const {name,profilePicture,role,department,github,twitter,linkedin,year,} = member;
-  console.log(name);
+  const {
+    name,
+    profilePicture,
+    role,
+    department,
+    github,
+    twitter,
+    linkedin,
+    year,
+  } = member;
   return (
     <>
       <Animate>
@@ -27,7 +35,10 @@ const Member = ({ member }) => {
             )}
           </div>
           <div className="member-card-body">
-            <h3 className="member-name text-center text-2xl font-bold p-1" style={{fontFamily:"Montserrat"}}>
+            <h3
+              className="member-name text-center text-2xl font-bold p-1"
+              style={{ fontFamily: "Montserrat" }}
+            >
               {name}
             </h3>
             <h4 className="member-role text-lg text-center">{role}</h4>
@@ -40,7 +51,7 @@ const Member = ({ member }) => {
             </h4>
             <div className="member-socials">
               <div className="flex justify-evenly p-2 items-center">
-                {github !=='' && (
+                {github && (
                   <Link to={github}>
                     <FaGithub className="" style={{ fontSize: "1.7rem" }} />
                   </Link>

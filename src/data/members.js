@@ -1,4 +1,4 @@
-import santhoshImg from "../assets/profilePictures/santhosh.jpg";
+import santhoshImg from "../assets/profilePictures/santhosh.png";
 import aryaImg from "../assets/profilePictures/arya.png";
 import tarunImg from "../assets/profilePictures/tarun.png";
 import chaitanyaImg from "../assets/profilePictures/chaitanya.png";
@@ -6,7 +6,18 @@ import varshithImg from "../assets/profilePictures/varshith.png";
 import asreethImg from "../assets/profilePictures/asreeth.png";
 import vasutaImg from "../assets/profilePictures/vasuta.png";
 import anjanaImg from "../assets/profilePictures/anjana.png";
+import marlinJoysImg from "../assets/profilePictures/marlin-joys.png"
+import siddharthImg from "../assets/profilePictures/siddharth.png"
 
+export const facultyCoOrdinators = [
+  {
+    name: "Marlin Joys",
+    profilePicture: marlinJoysImg,
+    role: "Faculty Coordinator & Sponor",
+    department: "Computer Science and Engineering",
+    linkedin:"https://www.linkedin.com/in/marline-joys-4a784bb1/"
+  },
+];
 export const ExecutiveTeam = [
   {
     name: "Tarun Varaha sai",
@@ -20,7 +31,7 @@ export const ExecutiveTeam = [
   {
     name: "Varshith G",
     profilePicture: varshithImg,
-    role: "Vice Chair",
+    role: "Vice Chair Person",
     department: "Computer Science and Engineering",
     github: "",
     linkedin: "https://linkedin.com/in/",
@@ -82,7 +93,7 @@ export const MarketingTeam = [
 export const developmentTeam = [
   {
     name: "Siddhartha V",
-    profilePicture: "",
+    profilePicture: siddharthImg,
     role: "Lead Android developer",
     department: "Computer Science and Engineering",
     github: "",
@@ -99,4 +110,3 @@ export const developmentTeam = [
     twitter: "https://twitter.com/SanthoshMani_P",
   },
 ];
-
