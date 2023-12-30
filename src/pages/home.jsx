@@ -20,11 +20,11 @@ const Home = () => {
       <Header />
 
       <div className="home pt-10">
-        <div className="home-hero h-screen md:flex md:justify-center md:items-center pt-5">
+        <div className="home-hero h-screen md:flex md:justify-center md:items-center pt-5 leading-loose">
           <div className="md:w-3/5">
             <h2
-              className="text-3xl font-bold text-center leading-none"
-              style={{ fontFamily: "Poppins,Ariel",fontSize:"65px" }}
+              className="lg:text-6xl text-4xl pt-5 font-bold text-center leading-none"
+              style={{ fontFamily: "Poppins,Ariel" }}
             >
               <div className="pt-3">
                 Welcome to
