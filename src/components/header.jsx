@@ -37,11 +37,11 @@ const Header = () => {
             <span className="material-icons">menu</span>
           </button>
           <div className=" w-full md:block md:w-auto hidden" id="navbar-solid-bg">
-            <ul className="flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <ul className="flex flex-col font-normal mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li className="text-center">
                 <Link
                   to={"/"}
-                  className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
+                  className="block py-1 px-3 text-gray-600 hover:text-blue-600  text-xl"
                   aria-current="page"
                 >
                   Home
@@ -50,7 +50,7 @@ const Header = () => {
               <li className="text-center">
                 <Link
                   to={"/events"}
-                  className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
+                  className="block py-1 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Events
                 </Link>
@@ -58,7 +58,7 @@ const Header = () => {
               <li className="text-center">
                 <Link
                   to={"/projects"}
-                  className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
+                  className="block py-1 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Projects
                 </Link>
@@ -66,7 +66,7 @@ const Header = () => {
               <li className="text-center">
                 <Link
                   to={"/team"}
-                  className="block py-2 px-3 text-gray-600 hover:text-blue-600  text-xl "
+                  className="block py-1 px-3 text-gray-600 hover:text-blue-600  text-xl "
                 >
                   Team
                 </Link>

@@ -1,36 +1,86 @@
+import Header from "../components/header";
+import Footer from "../components/footer";
+import events from "../assets/events.png";
+import { useEffect, useRef } from "react";
 import { FaGlobe } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import Header from "../components/header";
-import events from "../assets/events.png";
-import Footer from "../components/footer";
+import heroVideo from "../assets/home.mp4";
+import logo from "../assets/logo.png";
 
 const Home = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2.0;
+    }
+  }, []);
   return (
     <>
       <Header />
-      <div className="home-hero max-w-4xl mx-auto text-center p-4 pt-20">
-        <h2
-          className="text-3xl text-center md:text-5xl font-semibold"
-          style={{ fontFamily: "Open Sans,Montserrat,serif" }}
-        >
-          <div className="pt-5">
-            Welcome to
-            <span className="text-blue-600"> ACM ANITS </span>
-            Student Community
+
+      <div className="home pt-10">
+        <div className="home-hero h-screen md:flex md:justify-center md:items-center pt-5">
+          <div className="md:w-3/5">
+            <h2
+              className="text-3xl font-bold text-center leading-none"
+              style={{ fontFamily: "Poppins,Ariel",fontSize:"65px" }}
+            >
+              <div className="pt-3">
+                Welcome to
+                <span className="text-blue-600"> ACM ANITS </span>
+                Student Community
+              </div>
+            </h2>
+
+            <p
+              className="text-lg leading-relaxed lg:w-4/5 lg:text-2xl text-center mx-auto p-2 md:w-1/2 my-2"
+              style={{ fontFamily: "Poppins,serif" }}
+            >
+              ACM ANITS Student Chapter is a student community that aims to
+              encourage students to take up research and development in the
+              field of Computer Science.
+            </p>
           </div>
-        </h2>
+          <div className="home-hero-image">
+            <video
+              ref={videoRef}
+              id="hero-video"
+              src={heroVideo}
+              autoPlay={"true"}
+              loop
+              muted
+              playsInline
+              type="video/mp4"
+              className="w-3/4 mx-auto"
+              style={{ maxHeight: "60vh" }}
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="home-about max-w-4xl mx-auto text-center p-4 ">
-        <h2
-          className="text-5xl text-center"
-          style={{ fontFamily: "Open Sans,Montserrat,serif" }}
-        ></h2>
-        <p className="text-lg">
-          ACM ANITS Student Chapter is a student community that aims to
-          encourage students to take up research and development in the field of
-          Computer Science.
-        </p>
+      <div className="home-about mx-auto text-center p-4">
+        <h2 className="text-5xl text-center text-black pt-10 ">About</h2>
+        <div className="about-container flex justify-start items-center flex-col md:flex-row my-5 mx-auto">
+          <div className="about-image mx-auto lg:w-1/2">
+            <img src={logo} alt="" className="mx-auto h-auto" />
+          </div>
+          <div
+            className="leading-relaxed lg:text-lg text-start md:px-10 py-6 px-3 w-1/2"
+            style={{ fontFamily: "Poppins", backgroundColor: "#f6f9ff" }}
+          >
+            ANITS ACM Student Chapter was formed by the Department of Computer
+            Science & Engineering on <b>07.07.2017</b> to provide a platform for
+            UG & PG Students to improve &amp; showcase their Competitive skills
+            at National &amp; International Level. ACM is widely recognized as
+            the premier membership organization for computing professionals,
+            delivering resources that advance computing as a science &amp; a
+            profession. ACM hosts the computing industry&apos;s leading Digital
+            Library, and serves its global members and the computing profession
+            with journals and magazines, conferences, workshops, electronic
+            forums, and Learning Center.
+          </div>
+        </div>
       </div>
 
       <section id="upcoming-acm-anits-events border-2">
@@ -47,10 +97,10 @@ const Home = () => {
             />
           </div>
           <div className="mx-auto text-center leading-loose p-2 max-w-screen-sm">
-            <div className="text-center text-lg p-2 leading-relaxed">
-              ACM ANITS Student Chapter conducts workshops, hackathons, and
-              guest lectures and helps students to Upskill and get mentored.
-            </div>
+            <div
+              className="text-center text-lg p-2 leading-relaxed"
+              style={{ fontFamily: "Montserrat" }}
+            ></div>
           </div>
         </div>
         <div className="events-action flex justify-center items-center p-3">
