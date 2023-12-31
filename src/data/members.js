@@ -11,9 +11,9 @@ import siddharthImg from "../assets/profilePictures/siddharth.png"
 
 export const facultyCoOrdinators = [
   {
-    name: "Marlin Joys",
+    name: "Marline Joys",
     profilePicture: marlinJoysImg,
-    role: "Faculty Coordinator & Sponor",
+    role: "Faculty Coordinator & Sponsor",
     department: "Computer Science and Engineering",
     linkedin:"https://www.linkedin.com/in/marline-joys-4a784bb1/"
   },
