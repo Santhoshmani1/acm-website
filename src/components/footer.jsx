@@ -1,19 +1,19 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import acmlogo from "../assets/logo.png";
 const Footer = () => {
+  const Year = new Date().getFullYear();
   return (
     <>
       <footer>
         <div className="footer-container sm:grid sm:grid-cols-3 sm:items-center  z-10 bg-slate-900 pl-5 flex flex-col items-start">
-          <div className="wrapper flex items-center justify-evenly">
+          <div className="wrapper flex items-center justify-center">
             <div className="bg-white rounded-2xl p-2 mt-5">
               <img src={acmlogo} alt="acm-logo" style={{ height: "30px" }} />
             </div>
-            <h2 className="md:text-2xl  text-xl px-5 font-sans font-semibold mt-5">
+            <h2 className="md:text-2xl px-4 text-xl font-sans font-semibold mt-5">
               <Link to="/" className="text-white ">
-                <div className="text-center">ANITS</div>
-                <div className="text-center">ACM</div>
+                <div className="text-center">ACM ANITS</div>
               </Link>
             </h2>
           </div>
@@ -23,22 +23,22 @@ const Footer = () => {
              "
             >
               <li className="p-2 text-blue-500 text-lg">
-                <Link to="/" className="hover:underline">
+                <Link to="/#home" className="hover:underline">
                   Home
                 </Link>
               </li>
               <li className="p-2 text-blue-500 text-lg">
-                <Link to="/events" className="hover:underline">
+                <Link to="/events/#" className="hover:underline">
                   Events
                 </Link>
               </li>
               <li className="p-2 text-blue-500 text-lg">
-                <Link to="/Projects" className="hover:underline">
+                <Link to="/projects/#" className="hover:underline">
                   Projects
                 </Link>
               </li>
               <li className="p-2 text-blue-500 text-lg">
-                <Link to="/Team" className="hover:underline">
+                <Link to="/team/#" className="hover:underline">
                   Team
                 </Link>
               </li>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright-container sm:text-center p-3 font-sans bg-slate-900 text-gray-300">
-          <div className="font-bold p-1">ACM ANITS 2023</div>
+          <div className="font-bold p-1">ACM ANITS {Year}</div>
           &copy; All rights reserved
           <div></div>{" "}
         </div>
