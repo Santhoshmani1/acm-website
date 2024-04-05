@@ -18,7 +18,7 @@ const Member = ({ member }) => {
   return (
     <>
       <Animate>
-        <div className="member-card max-w-4/5 flex flex-col justify-evenly items-center max-w-md mx-auto p-2 m-2 border shadow-sm rounded-xl  bg-white  shadow-blue-500">
+        <div className="member-card max-w-4/5 flex flex-col justify-evenly items-center max-w-md mx-auto p-2 m-2 border shadow-sm rounded-xl bg-white shadow-blue-500">
           <div className="member-card-header">
             {profilePicture ? (
               <img
@@ -28,7 +28,7 @@ const Member = ({ member }) => {
               />
             ) : (
               <>
-                <div className="h-40 w-10 px-10 bg-blue-500  text-center text-4xl mt-10 rounded-xl flex justify-center items-center">
+                <div className="h-40 w-10 px-10 bg-white  text-center text-4xl mt-10 rounded-xl flex justify-center items-center">
                   <div className="text-5xl">{name[0]}</div>
                 </div>
               </>

@@ -35,3 +35,23 @@
     color: #3e5b91;
   }
   
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #069af0;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #069aed;
+  }

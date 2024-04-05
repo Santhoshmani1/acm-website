@@ -1,13 +1,13 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import {facultyCoOrdinators,ExecutiveTeam,AssociateTeam,MarketingTeam,developmentTeam} from "../data/members";
+import { facultyCoOrdinators, ExecutiveTeam, AssociateTeam, MarketingTeam, developmentTeam } from "../data/members";
 import Member from "../components/member";
 
 const Team = () => {
   return (
     <>
       <Header />
-      <div className="team pb-10 pt-20 mx-auto bg-gray-200">
+      <div className="team pb-10 pt-20 mx-auto bg-white">
         <h2
           className="text-4xl text-center p-2 mb-5  font-bold leading-loose"
           style={{
@@ -19,41 +19,41 @@ const Team = () => {
           Meet the Team
         </h2>
 
-        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Faculty Co-Ordinators</h3>
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{ fontFamily: "Montserrat" }}>Faculty Co-Ordinators</h3>
 
         <div className="faculty-container flex flex-col lg:flex-row justify-evenly items-center mx-auto px-10">
-          {facultyCoOrdinators.map((member,index) => (
+          {facultyCoOrdinators.map((member, index) => (
             <Member member={member} key={index} />
           ))}
         </div>
 
-          <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Executive Team</h3>
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{ fontFamily: "Montserrat" }}>Executive Team</h3>
         <div className="executives-container lg:grid lg:grid-cols-3 lg:gap-3 flex flex-col justify-center items-center">
-          {ExecutiveTeam.map((member,index) => (
-            <Member member={member} key={index}/>
+          {ExecutiveTeam.map((member, index) => (
+            <Member member={member} key={index} />
           ))}
         </div>
 
-        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Associate Team</h3>
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{ fontFamily: "Montserrat" }}>Associate Team</h3>
         <div className="associates-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
-          {AssociateTeam.map((member,index) => (
-            <Member member={member} key={index}/>
+          {AssociateTeam.map((member, index) => (
+            <Member member={member} key={index} />
           ))}
-          </div>
+        </div>
 
-          <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Marketing Team</h3>
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{ fontFamily: "Montserrat" }}>Marketing Team</h3>
         <div className="marketing-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
-          {MarketingTeam.map((member,index) => (
-            <Member member={member} key={index}/>
+          {MarketingTeam.map((member, index) => (
+            <Member member={member} key={index} />
           ))}
-          </div>
+        </div>
 
-          <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{fontFamily:"Montserrat"}}>Development Team</h3>
+        <h3 className="p-2 text-xl font-bold text-center leading-loose" style={{ fontFamily: "Montserrat" }}>Development Team</h3>
         <div className="development-container flex flex-col lg:flex-row justify-evenly items-center mx-auto">
-          {developmentTeam.map((member,index) => (
-            <Member member={member} key={index}/>
+          {developmentTeam.map((member, index) => (
+            <Member member={member} key={index} />
           ))}
-          </div>
+        </div>
 
       </div>
       <Footer />
